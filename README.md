@@ -10,7 +10,6 @@ This is a simple Flutter dictionary app that allows users to search for word mea
 - Simple and clean UI
 - Handles errors and loading states gracefully
 
-## Installation
-1. Clone the repository:
-   ```sh
+## Check Output
+- Output: [Click Here](https://67bd5c419933aa613f4f3854--effortless-nasturtium-7bce69.netlify.app/)
    

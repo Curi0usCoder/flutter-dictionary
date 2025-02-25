@@ -1,10 +1,15 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-void main() {
-  runApp(DictionaryApp());
-}
+void main() => runApp(
+  DevicePreview(
+    enabled: kReleaseMode,
+    builder: (context) => DictionaryApp(), // Wrap your app
+  ),
+);
 
 class DictionaryApp extends StatelessWidget {
   @override
@@ -61,7 +66,7 @@ class _DictionaryScreenState extends State<DictionaryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dictionary App'),
+        title: Text('Dictionary App',style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.blueAccent,
       ),
       body: Padding(
